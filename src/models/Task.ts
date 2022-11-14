@@ -5,7 +5,11 @@ const schema= new Schema({
     asignatura: String,
     descripcion: String,
     completado: Boolean,
-    tiempo: Number
+    tiempo: Number,
+    createdAt: {
+        type: Date,
+        default: Date.now
+    }
 })
 
 interface ITask extends Document{
@@ -13,7 +17,8 @@ interface ITask extends Document{
     asignatura: string,
     descripcion: string,
     completado: boolean,
-    tiempo: number
+    tiempo: number,
+    createdAt: Date
 }
 
 export default model<ITask>("Task", schema)

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas</title>
+    <%- include('../../utils/links') %>
+</head>
+
+<body>
+    <h2>Notas</h2>
+    <a href="/">Inicio</a>
+    <a href="/createNota">Incluir notas</a>
+    <% allNotas.forEach((i)=>{ %>
+        <div class="container">
+            <div class="card mt-4">
+                <div class="card-header">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <%= i.asignatura %>
+
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <%= i.calificacion %>
+                    </h5>
+                    <p class="card-text">
+                        <%= i.curso %>
+                    </p>
+                    <hr>
+                    <p class="card-text">
+                        <%= i.nota %>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <% }) %>
+</body>
+
+</html>
