@@ -1,0 +1,70 @@
+:root {
+    --background: #242132;
+    --primary: #746CFE;
+    --secondary: #AE8CFA;
+    --font: #EAEAEA;
+    --secondary-font: #C3C3D6;
+}
+
+* {
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main-navbar {
+    padding: 1.5rem 0;
+    background-color: transparent;
+    background-image: linear-gradient(to bottom, rgba(var(--primary)), rgba(var(--primary)));
+    box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%), inset 0 -1px 0 rgb(0 0 0 / 15%);
+}
+
+#main-navbar>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#main-navbar>div>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.15rem;
+    text-transform: uppercase;
+}
+
+body {
+    background-color: var(--background) !important;
+}
+
+.card {
+    background-color: var(--secondary);
+}
+
+#nombre-card-asignatura>p {
+    color: var(--font);
+    text-transform: uppercase;
+    margin: auto 0;
+}
+
+#trash-button {
+    color: var(--font);
+    border-color: var(--font);
+}
+
+.card-title {
+    color: var(--font) !important;
+}
+
+.card-text {
+    color: var(--font) !important;
+}
+
+hr {
+    color: var(--font);
+}
+
+#completado-button {
+    background-color: var(--primary) !important;
+    color: var(--font) !important;
+}
